@@ -1,0 +1,44 @@
+\begin{table}[H!]
+\centering
+\caption{Private IPv4 assignment}
+\label{tab:private-ipv4-assignment}
+
+\begin{center}
+\scriptsize
+\begin{tabularx}{1\textwidth}{|Z|Z|Y|Y|Y|Y|Y|Y|Y|}
+\hline
+\multicolumn{9}{|c|}{\textbf{Private IPv4 assignment}} \\
+[0.5ex]
+\hline
+\hline
+& \textbf{Department} & Network ~~~~ Address & Mask & Broadcast ~~ Address & Available addresses & Used addresses & Gateway \#1 address & Gateway \#2 address \\
+
+\hline
+
+\multirow{\textbf{NewNet ISP}} & NewNetCenter & -- & -- & -- & -- & -- & -- & -- \\
+\cline{2-9}
+& NewNetIT & -- & -- & -- & -- & -- & -- & -- \\
+
+\hline
+
+    \multirow{\textbf{Amazing}} & Offices & 10.54.76.0 & 23 & 10.54.77.255 & 10.54.76.1 $\rightarrow$ 10.54.77.254 & & 10.54.78.1 & 10.54.78.5 \\
+\cline{2-9}
+& WiFi & 10.54.72.0 & 22 & 10.54.75.255 & 10.54.72.1 $\rightarrow$ 10.54.75.254 &  & 10.54.78.1 & 10.54.78.5 \\
+\cline{2-9}
+& Factory & 10.54.64.0 & 21 & 10.54.71.255 & 10.54.64.1 $\rightarrow$ 10.54.71.254 &  & 10.54.78.1 & 10.54.78.5 \\
+\cline{2-9}
+& Interconnection Amazing - ESW\#1 & 10.54.78.0 & 30 & 10.54.78.3 & 10.54.78.1 $\rightarrow$ 10.54.78.2 &  &  &  \\
+\cline{2-9}
+    & Interconnection Amazing - ESW\#2 & 10.54.78.4 & 30 & 10.54.78.7 & 10.54.78.5 $\rightarrow$ 10.54.78.6 &  &  &  \\
+
+\hline
+
+\multirow{\textbf{GR8}} & Office & 10.114.36.0 & 24 & 10.114.36.255 & 10.114.36.1 $\rightarrow$ 10.114.36.254 &  & -- & -- \\
+\cline{2-9}
+& WiFi & 10.114.37.0 & 24 & 10.114.37.255 & 10.114.37.1 $\rightarrow$ 10.114.37.254 &  & -- & -- \\
+
+\hline
+\end{tabularx}
+\end{center}
+
+\end{table}
