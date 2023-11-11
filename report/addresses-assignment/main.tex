@@ -20,8 +20,10 @@
 \usepackage{tabularx}
 \renewcommand{\familydefault}{\sfdefault}
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
-\newcolumntype{Z}{>{\centering\arraybackslash}m{1.2\dimexpr(\textwidth-20\tabcolsep)/9\relax}}
-\newcolumntype{L}{>{\centering\arraybackslash}m{2\dimexpr(\textwidth-20\tabcolsep)/9\relax}}
+\newcolumntype{Z}{>{\centering\arraybackslash}m{1.1\dimexpr(\textwidth-20\tabcolsep)/9\relax}}
+\newcolumntype{F}{>{\centering\arraybackslash}m{1.2\dimexpr(\textwidth-20\tabcolsep)/9\relax}}
+\newcolumntype{S}{>{\centering\arraybackslash}m{0.35\dimexpr(\textwidth-20\tabcolsep)/9\relax}}
+\newcolumntype{L}{>{\centering\arraybackslash}m{1.5\dimexpr(\textwidth-20\tabcolsep)/9\relax}}
 
 \geometry{
     paper=a4paper,
@@ -31,7 +33,7 @@
 
 \begin{document}
 
-\renewcommand{\headrulewidth}{0pt} % remove lines as well
+\renewcommand{\headrulewidth}{0.5pt} % remove lines as well
 \renewcommand{\footrulewidth}{0.5pt}
 \fancypagestyle{plain}{
     \fancyhf{}% Clear header/footer
@@ -71,7 +73,6 @@ Since our nmecs are 113435 and 114184, the list of numbers to be used in the IP 
     \multicolumn{9}{|c|}{\textbf{Private IPv4 assignment}} \\
     [0.5ex]
     \hline
-
     \hline
     & \textbf{Department} & Network ~~~~ Address & Mask & Broadcast ~~ Address & Available Addresses & Used Addresses & Gateway \#1 Address & Gateway \#2 Address \\
 
@@ -121,7 +122,7 @@ All this explained more visually in the following image.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{private-ipv4-amazing.png}
+    \includegraphics[width=\textwidth,trim={0 7cm 0 7.9cm},clip]{private-ipv4}
     \caption{Private IPv4 assignment for Amazing}
     \label{fig:private-ipv4-amazing}
 \end{figure}
@@ -149,14 +150,13 @@ This company will have no gateways.
 
 \begin{center}
 \scriptsize
-\begin{tabularx}{1\textwidth}{|Z|Z|Z|Y|Z|Z|Y|Z|Y|}
+\begin{tabularx}{1\textwidth}{|F|Z|Z|S|Z|Z|Y|Z|Y|}
     \hline
     \multicolumn{9}{|c|}{\textbf{Public IPv4 assignment}} \\
     [0.5ex]
     \hline
-
     \hline
-    & \textbf{Department} & Network ~~~~ Address & Mask & Broadcast ~~ Address & Available Addresses & Used Addresses & Gateway \#1 Address & Gateway \#2 Address \\
+    & \textbf{Department} & Network Address & Mask & Broadcast Address & Available Addresses & Used Addresses & Gateway \#1 Address & Gateway \#2 Address \\
 
     \hline
 
@@ -211,7 +211,7 @@ Since we only have one ISP, we will need to divide the same network for all the 
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{public-ipv4.png}
+    \includegraphics[width=\textwidth,trim={0 14cm 0 0},clip]{public-ipv4}
     \caption{Public IPv4 assignment}
     \label{fig:public-ipv4}
 \end{figure}
@@ -220,55 +220,67 @@ Since we only have one ISP, we will need to divide the same network for all the 
 \chapter*{Global IPv6 Assignment}
 
 \begin{table}[H!]
-\centering
-\caption{Global IPv6 assignment}
+    \centering
 
-\begin{center}
-\scriptsize
-\begin{tabularx}{1\textwidth}{|Z|Z|L|Y|L|Y|Y|Y|}
-    \hline
-    \multicolumn{8}{|c|}{\textbf{Global IPv6 assignment}} \\
-    [0.5ex]
-    \hline
+    \begin{center}
+    \scriptsize
 
-    \hline
-    & \textbf{Department} & Network Address & Mask & Available Addresses & Used Addresses & Gateway \#1 Address & Gateway \#2 Address \\
+    \begin{tabularx}{1\textwidth}{|F|Z|Z|Y|L|L|Z|Z|}
+        \hline
+        \multicolumn{8}{|c|}{\textbf{Global IPv6 assignment}} \\
+        [0.5ex]
+        \hline
+        \hline
+        & \textbf{Department} & Network Address & Mask & Available Addresses & Used Addresses & Gateway \#1 Address & Gateway \#2 Address \\
 
-    \hline
+        \hline
 
-    \multirow{\textbf{NewNet ISP}} & NewNetCenter & 2002:8888:4314:11C0:: & 64 &  & -- &  &  \\
-    \cline{2-8}
-    & NewNetIT & 2002:8888:4314:11C1:: & 64 &  & -- &  &  \\
+        \multirow{\textbf{NewNet ISP}} & NewNetCenter & \textbf{G}:11C0:: & 64 & \textbf{G}:11C0::0003 $\rightarrow$ \textbf{G}:11C0:FFFF:FFFF & -- & \textbf{G}:11C0::0001 & \textbf{G}:11C0::0002 \\
+        \cline{2-8}
+        & NewNetIT & \textbf{G}:11C1:: & 64 & \textbf{G}:11C1::0003 $\rightarrow$ \textbf{G}:11C1:FFFF:FFFF & -- & \textbf{G}:11C1::0001 & \textbf{G}:11C1::0002 \\
 
-    \hline
+        \hline
 
-    \multirow{\textbf{Amazing}} & Offices & 2002:8888:4314:1180:: & 64 &  & -- &  &  \\
-    \cline{2-8}
-    & WiFi & 2002:8888:4314:1181:: & 64 &  & -- &  &  \\
-    \cline{2-8}
-    & Factory & -- & -- & -- & -- & -- & -- \\
-    \cline{2-8}
-    & Interconnection Amazing - ESW\#1 & 2002:8888:4314:1182::0000 & 126 &  & -- &  &  \\
-    \cline{2-8}
-    & Interconnection Amazing - ESW\#2 & 2002:8888:4314:1182::0004 & 126 &  & -- &  &  \\
+        \multirow{\textbf{Amazing}} & Offices & \textbf{G}:1180:: & 64 & \textbf{G}:1180::0003 $\rightarrow$ \textbf{G}:1180:FFFF:FFFF & -- & \textbf{G}:1180::0001 & \textbf{G}:1180::0002 \\
+        \cline{2-8}
+        & WiFi & \textbf{G}:1181:: & 64 & \textbf{G}:1181::0003 $\rightarrow$ \textbf{G}:1181:FFFF:FFFF & -- & \textbf{G}:1181::0001 & \textbf{G}:1181::0002 \\
+        \cline{2-8}
+        & Factory & -- & -- & -- & -- & -- & -- \\
+        \cline{2-8}
+        & Interconnection Amazing - ESW\#1 & FE80::1 & 10 & -- & -- & -- & -- \\
+        \cline{2-8}
+        & Interconnection Amazing - ESW\#2 & FE80::2 & 10 & -- & -- & -- & -- \\
 
-    \hline
+        \hline
 
-    \multirow{\textbf{GR8}} & Office & 2002:8888:4314:1190:: & 64 &  & -- &  &  \\
-    \cline{2-8}
-    & WiFi & 2002:8888:4314:1191:: & 64 &  & -- &  &  \\
+        \multirow{\textbf{GR8}} & Office & \textbf{G}:1190:: & 64 & \textbf{G}:1190::0003 $\rightarrow$ \textbf{G}:1190:FFFF:FFFF & -- & \textbf{G}:1190::0001 & \textbf{G}:1190::0002 \\
+        \cline{2-8}
+        & WiFi & \textbf{G}:1191:: & 64 & \textbf{G}:1191::0003 $\rightarrow$ \textbf{G}:1191:FFFF:FFFF & -- & \textbf{G}:1191::0001 & \textbf{G}:1191::0002 \\
 
-    \hline
+        \hline
 
-    \multirow{\textbf{Interconnection}} & NewNet - Amazing & 2002:8888:4314:1100::0000 & 126 &  & -- &  &  \\
-    \cline{2-8}
-    & NewNet - GR8 & 2002:8888:4314:1100::0004 & 126 &  & -- &  &  \\
+        \multirow{\textbf{Interconnection}} & NewNet - Amazing & \textbf{G}:1100::0002 & 126 & \textbf{G}:1100::0003 & -- & \textbf{G}:1100::0001 & \textbf{G}:1100::0002 \\
+        \cline{2-8}
+        & NewNet - GR8 & \textbf{G}:1100::0004 & 126 & \textbf{G}:1100::0007 & -- & \textbf{G}:1100::0005 & \textbf{G}:1100::0006 \\
 
-    \hline
-\end{tabularx}
-\end{center}
+        \hline
+    \end{tabularx}
 
+    \caption{Global prefix: \textbf{G} = 2002:8888:4314}
+
+    \end{center}
 \end{table}
 
+\pagebreak
+\subsection*{Justification}
+
+Our global IPv6 prefix will be 2002:8888:4314:1100::/56. From there, we will divide it into all the subnets we need as explained in the following image.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,trim={0 6cm 0 0},clip]{global-ipv6}
+    \caption{Global IPv6 assignment}
+    \label{fig:global-ipv6}
+\end{figure}
 
 \end{document}
