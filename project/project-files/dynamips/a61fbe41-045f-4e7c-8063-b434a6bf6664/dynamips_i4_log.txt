@@ -1,0 +1,42 @@
+Nov 27 14:07:31.157 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 27 14:07:31.157 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 34765.
+Nov 27 14:07:31.165 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 27 14:07:31.166 HYPERVISOR: exec_cmd: hypervisor working_dir /home/tiagorg/repos/uaveiro-leci/2ano/1semestre/rc1/rc1-project/project/project-files/dynamips 
+Nov 27 14:07:31.166 GENERAL: working_dir=/home/tiagorg/repos/uaveiro-leci/2ano/1semestre/rc1/rc1-project/project/project-files/dynamips
+Nov 27 14:07:31.166 HYPERVISOR: exec_cmd: ethsw create NewNetSw 
+Nov 27 14:07:32.084 HYPERVISOR: exec_cmd: nio create_udp udp-a9c116f1-3a1a-4e18-82d7-cad2f3c3d776 10011 127.0.0.1 10010 
+Nov 27 14:07:32.084 HYPERVISOR: exec_cmd: ethsw add_nio NewNetSw udp-a9c116f1-3a1a-4e18-82d7-cad2f3c3d776 
+Nov 27 14:07:32.100 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-a9c116f1-3a1a-4e18-82d7-cad2f3c3d776 1 
+Nov 27 14:07:32.136 HYPERVISOR: exec_cmd: nio create_udp udp-0a694e2e-daff-46d4-89fc-2320f1cd7ddb 10012 127.0.0.1 10013 
+Nov 27 14:07:32.136 HYPERVISOR: exec_cmd: ethsw add_nio NewNetSw udp-0a694e2e-daff-46d4-89fc-2320f1cd7ddb 
+Nov 27 14:07:32.139 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-0a694e2e-daff-46d4-89fc-2320f1cd7ddb 1 
+Nov 27 14:14:34.004 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-a9c116f1-3a1a-4e18-82d7-cad2f3c3d776 1 
+Nov 27 14:14:34.092 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-0a694e2e-daff-46d4-89fc-2320f1cd7ddb 1 
+Nov 27 14:14:50.906 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-a9c116f1-3a1a-4e18-82d7-cad2f3c3d776 1 
+Nov 27 14:14:50.948 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-0a694e2e-daff-46d4-89fc-2320f1cd7ddb 1 
+Nov 27 14:14:52.627 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-a9c116f1-3a1a-4e18-82d7-cad2f3c3d776 1 
+Nov 27 14:14:52.628 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-0a694e2e-daff-46d4-89fc-2320f1cd7ddb 1 
+Nov 27 14:14:53.341 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-a9c116f1-3a1a-4e18-82d7-cad2f3c3d776 1 
+Nov 27 14:14:53.347 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-0a694e2e-daff-46d4-89fc-2320f1cd7ddb 1 
+Nov 27 14:15:21.491 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-a9c116f1-3a1a-4e18-82d7-cad2f3c3d776 1 
+Nov 27 14:15:21.564 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-0a694e2e-daff-46d4-89fc-2320f1cd7ddb 1 
+Nov 27 14:15:23.286 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-a9c116f1-3a1a-4e18-82d7-cad2f3c3d776 1 
+Nov 27 14:15:23.287 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-0a694e2e-daff-46d4-89fc-2320f1cd7ddb 1 
+Nov 27 14:15:24.003 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-a9c116f1-3a1a-4e18-82d7-cad2f3c3d776 1 
+Nov 27 14:15:24.049 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-0a694e2e-daff-46d4-89fc-2320f1cd7ddb 1 
+Nov 27 14:15:45.404 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-a9c116f1-3a1a-4e18-82d7-cad2f3c3d776 1 
+Nov 27 14:15:45.427 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-0a694e2e-daff-46d4-89fc-2320f1cd7ddb 1 
+Nov 27 14:15:45.796 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-a9c116f1-3a1a-4e18-82d7-cad2f3c3d776 1 
+Nov 27 14:15:45.844 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-0a694e2e-daff-46d4-89fc-2320f1cd7ddb 1 
+Nov 27 14:15:46.056 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-a9c116f1-3a1a-4e18-82d7-cad2f3c3d776 1 
+Nov 27 14:15:46.100 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-0a694e2e-daff-46d4-89fc-2320f1cd7ddb 1 
+Nov 27 14:17:01.735 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-a9c116f1-3a1a-4e18-82d7-cad2f3c3d776 1 
+Nov 27 14:17:01.816 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-0a694e2e-daff-46d4-89fc-2320f1cd7ddb 1 
+Nov 27 14:17:03.608 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-a9c116f1-3a1a-4e18-82d7-cad2f3c3d776 1 
+Nov 27 14:17:03.611 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-0a694e2e-daff-46d4-89fc-2320f1cd7ddb 1 
+Nov 27 14:17:04.424 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-a9c116f1-3a1a-4e18-82d7-cad2f3c3d776 1 
+Nov 27 14:17:04.434 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-0a694e2e-daff-46d4-89fc-2320f1cd7ddb 1 
+Nov 27 14:17:22.691 HYPERVISOR: exec_cmd: ethsw delete NewNetSw 
+Nov 27 14:17:22.712 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 27 14:17:23.202 HYPERVISOR: Stopped.
+Nov 27 14:17:23.202 GENERAL: reset done.

@@ -1,0 +1,55 @@
+Nov 27 14:07:31.110 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 27 14:07:31.110 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 48197.
+Nov 27 14:07:31.119 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 27 14:07:31.119 HYPERVISOR: exec_cmd: hypervisor working_dir /home/tiagorg/repos/uaveiro-leci/2ano/1semestre/rc1/rc1-project/project/project-files/dynamips 
+Nov 27 14:07:31.119 GENERAL: working_dir=/home/tiagorg/repos/uaveiro-leci/2ano/1semestre/rc1/rc1-project/project/project-files/dynamips
+Nov 27 14:07:31.119 HYPERVISOR: exec_cmd: ethsw create GR8-Office 
+Nov 27 14:07:31.774 HYPERVISOR: exec_cmd: nio create_udp udp-3cd9a9b6-e870-4c73-9221-6544b23e0762 10000 127.0.0.1 10001 
+Nov 27 14:07:31.774 HYPERVISOR: exec_cmd: ethsw add_nio GR8-Office udp-3cd9a9b6-e870-4c73-9221-6544b23e0762 
+Nov 27 14:07:31.793 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-3cd9a9b6-e870-4c73-9221-6544b23e0762 1 
+Nov 27 14:07:31.857 HYPERVISOR: exec_cmd: nio create_udp udp-2c65abd2-556c-47b0-ae50-0619569c4575 10003 127.0.0.1 10002 
+Nov 27 14:07:31.858 HYPERVISOR: exec_cmd: ethsw add_nio GR8-Office udp-2c65abd2-556c-47b0-ae50-0619569c4575 
+Nov 27 14:07:31.873 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-2c65abd2-556c-47b0-ae50-0619569c4575 1 
+Nov 27 14:07:31.914 HYPERVISOR: exec_cmd: nio create_udp udp-e012f45b-f43f-4e35-b47a-8c0263c7206f 10005 127.0.0.1 10004 
+Nov 27 14:07:31.915 HYPERVISOR: exec_cmd: ethsw add_nio GR8-Office udp-e012f45b-f43f-4e35-b47a-8c0263c7206f 
+Nov 27 14:07:31.933 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-e012f45b-f43f-4e35-b47a-8c0263c7206f 1 
+Nov 27 14:14:34.694 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-3cd9a9b6-e870-4c73-9221-6544b23e0762 1 
+Nov 27 14:14:34.695 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-2c65abd2-556c-47b0-ae50-0619569c4575 1 
+Nov 27 14:14:34.738 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-e012f45b-f43f-4e35-b47a-8c0263c7206f 1 
+Nov 27 14:14:34.921 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-3cd9a9b6-e870-4c73-9221-6544b23e0762 1 
+Nov 27 14:14:34.972 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-2c65abd2-556c-47b0-ae50-0619569c4575 1 
+Nov 27 14:14:34.978 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-e012f45b-f43f-4e35-b47a-8c0263c7206f 1 
+Nov 27 14:14:35.242 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-3cd9a9b6-e870-4c73-9221-6544b23e0762 1 
+Nov 27 14:14:35.317 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-2c65abd2-556c-47b0-ae50-0619569c4575 1 
+Nov 27 14:14:35.383 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-e012f45b-f43f-4e35-b47a-8c0263c7206f 1 
+Nov 27 14:14:51.398 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-3cd9a9b6-e870-4c73-9221-6544b23e0762 1 
+Nov 27 14:14:51.444 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-2c65abd2-556c-47b0-ae50-0619569c4575 1 
+Nov 27 14:14:51.445 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-e012f45b-f43f-4e35-b47a-8c0263c7206f 1 
+Nov 27 14:14:51.679 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-3cd9a9b6-e870-4c73-9221-6544b23e0762 1 
+Nov 27 14:14:51.683 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-2c65abd2-556c-47b0-ae50-0619569c4575 1 
+Nov 27 14:14:51.722 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-e012f45b-f43f-4e35-b47a-8c0263c7206f 1 
+Nov 27 14:14:53.128 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-3cd9a9b6-e870-4c73-9221-6544b23e0762 1 
+Nov 27 14:14:53.205 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-2c65abd2-556c-47b0-ae50-0619569c4575 1 
+Nov 27 14:14:53.206 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-e012f45b-f43f-4e35-b47a-8c0263c7206f 1 
+Nov 27 14:15:22.001 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-3cd9a9b6-e870-4c73-9221-6544b23e0762 1 
+Nov 27 14:15:22.003 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-2c65abd2-556c-47b0-ae50-0619569c4575 1 
+Nov 27 14:15:22.048 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-e012f45b-f43f-4e35-b47a-8c0263c7206f 1 
+Nov 27 14:15:22.300 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-3cd9a9b6-e870-4c73-9221-6544b23e0762 1 
+Nov 27 14:15:22.308 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-2c65abd2-556c-47b0-ae50-0619569c4575 1 
+Nov 27 14:15:22.349 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-e012f45b-f43f-4e35-b47a-8c0263c7206f 1 
+Nov 27 14:15:23.820 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-3cd9a9b6-e870-4c73-9221-6544b23e0762 1 
+Nov 27 14:15:23.859 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-2c65abd2-556c-47b0-ae50-0619569c4575 1 
+Nov 27 14:15:23.910 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-e012f45b-f43f-4e35-b47a-8c0263c7206f 1 
+Nov 27 14:17:02.187 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-3cd9a9b6-e870-4c73-9221-6544b23e0762 1 
+Nov 27 14:17:02.266 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-2c65abd2-556c-47b0-ae50-0619569c4575 1 
+Nov 27 14:17:02.267 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-e012f45b-f43f-4e35-b47a-8c0263c7206f 1 
+Nov 27 14:17:02.561 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-3cd9a9b6-e870-4c73-9221-6544b23e0762 1 
+Nov 27 14:17:02.567 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-2c65abd2-556c-47b0-ae50-0619569c4575 1 
+Nov 27 14:17:02.574 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-e012f45b-f43f-4e35-b47a-8c0263c7206f 1 
+Nov 27 14:17:04.104 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-3cd9a9b6-e870-4c73-9221-6544b23e0762 1 
+Nov 27 14:17:04.250 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-2c65abd2-556c-47b0-ae50-0619569c4575 1 
+Nov 27 14:17:04.251 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-e012f45b-f43f-4e35-b47a-8c0263c7206f 1 
+Nov 27 14:17:22.689 HYPERVISOR: exec_cmd: ethsw delete GR8-Office 
+Nov 27 14:17:22.732 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 27 14:17:23.156 HYPERVISOR: Stopped.
+Nov 27 14:17:23.156 GENERAL: reset done.

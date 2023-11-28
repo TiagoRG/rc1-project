@@ -1,0 +1,36 @@
+Nov 27 14:07:31.092 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 27 14:07:31.092 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 36857.
+Nov 27 14:07:31.100 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 27 14:07:31.100 HYPERVISOR: exec_cmd: hypervisor working_dir /home/tiagorg/repos/uaveiro-leci/2ano/1semestre/rc1/rc1-project/project/project-files/dynamips 
+Nov 27 14:07:31.100 GENERAL: working_dir=/home/tiagorg/repos/uaveiro-leci/2ano/1semestre/rc1/rc1-project/project/project-files/dynamips
+Nov 27 14:07:31.101 HYPERVISOR: exec_cmd: ethsw create GR8-VLAN 
+Nov 27 14:07:31.799 HYPERVISOR: exec_cmd: nio create_udp udp-7ed5db82-9307-4558-a415-325ab118e203 10001 127.0.0.1 10000 
+Nov 27 14:07:31.799 HYPERVISOR: exec_cmd: ethsw add_nio GR8-VLAN udp-7ed5db82-9307-4558-a415-325ab118e203 
+Nov 27 14:07:31.815 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-7ed5db82-9307-4558-a415-325ab118e203 1 
+Nov 27 14:07:31.971 HYPERVISOR: exec_cmd: nio create_udp udp-ea4e2a50-e165-48c5-8e9d-75ef42d08d8c 10006 127.0.0.1 10007 
+Nov 27 14:07:31.971 HYPERVISOR: exec_cmd: ethsw add_nio GR8-VLAN udp-ea4e2a50-e165-48c5-8e9d-75ef42d08d8c 
+Nov 27 14:07:31.976 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-ea4e2a50-e165-48c5-8e9d-75ef42d08d8c 1 
+Nov 27 14:14:34.091 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-7ed5db82-9307-4558-a415-325ab118e203 1 
+Nov 27 14:14:34.164 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-ea4e2a50-e165-48c5-8e9d-75ef42d08d8c 1 
+Nov 27 14:14:50.909 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-7ed5db82-9307-4558-a415-325ab118e203 1 
+Nov 27 14:14:50.949 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-ea4e2a50-e165-48c5-8e9d-75ef42d08d8c 1 
+Nov 27 14:14:52.630 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-7ed5db82-9307-4558-a415-325ab118e203 1 
+Nov 27 14:14:52.637 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-ea4e2a50-e165-48c5-8e9d-75ef42d08d8c 1 
+Nov 27 14:14:53.477 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-7ed5db82-9307-4558-a415-325ab118e203 1 
+Nov 27 14:14:53.521 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-ea4e2a50-e165-48c5-8e9d-75ef42d08d8c 1 
+Nov 27 14:15:21.566 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-7ed5db82-9307-4558-a415-325ab118e203 1 
+Nov 27 14:15:21.573 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-ea4e2a50-e165-48c5-8e9d-75ef42d08d8c 1 
+Nov 27 14:15:23.289 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-7ed5db82-9307-4558-a415-325ab118e203 1 
+Nov 27 14:15:23.295 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-ea4e2a50-e165-48c5-8e9d-75ef42d08d8c 1 
+Nov 27 14:15:24.258 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-7ed5db82-9307-4558-a415-325ab118e203 1 
+Nov 27 14:15:24.259 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-ea4e2a50-e165-48c5-8e9d-75ef42d08d8c 1 
+Nov 27 14:17:01.862 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-7ed5db82-9307-4558-a415-325ab118e203 1 
+Nov 27 14:17:01.908 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-ea4e2a50-e165-48c5-8e9d-75ef42d08d8c 1 
+Nov 27 14:17:03.611 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-7ed5db82-9307-4558-a415-325ab118e203 1 
+Nov 27 14:17:03.615 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-ea4e2a50-e165-48c5-8e9d-75ef42d08d8c 1 
+Nov 27 14:17:04.522 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-7ed5db82-9307-4558-a415-325ab118e203 1 
+Nov 27 14:17:04.598 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-VLAN udp-ea4e2a50-e165-48c5-8e9d-75ef42d08d8c 1 
+Nov 27 14:17:22.690 HYPERVISOR: exec_cmd: ethsw delete GR8-VLAN 
+Nov 27 14:17:22.712 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 27 14:17:23.134 HYPERVISOR: Stopped.
+Nov 27 14:17:23.134 GENERAL: reset done.
