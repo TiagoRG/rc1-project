@@ -84,11 +84,11 @@ Since our nmecs are 113435 and 114184, the list of numbers to be used in the IP 
 
     \hline
 
-    \multirow{\textbf{Amazing}} & Offices & 10.54.76.0 & 23 & 10.54.77.255 & 10.54.76.1 $\rightarrow$ 10.54.77.254 & -- & 10.54.78.1 & 10.54.78.5 \\
+    \multirow{\textbf{Amazing}} & Offices & 10.54.76.0 & 23 & 10.54.77.255 & 10.54.76.3 $\rightarrow$ 10.54.77.254 & -- & 10.54.76.1 & 10.54.76.2 \\
     \cline{2-9}
-    & WiFi & 10.54.72.0 & 22 & 10.54.75.255 & 10.54.72.1 $\rightarrow$ 10.54.75.254 & -- & 10.54.78.1 & 10.54.78.5 \\
+    & WiFi & 10.54.72.0 & 22 & 10.54.75.255 & 10.54.72.3 $\rightarrow$ 10.54.75.254 & -- & 10.54.72.1 & 10.54.72.2 \\
     \cline{2-9}
-    & Factory & 10.54.64.0 & 21 & 10.54.71.255 & 10.54.64.1 $\rightarrow$ 10.54.71.254 & -- & 10.54.78.1 & 10.54.78.5 \\
+    & Factory & 10.54.64.0 & 21 & 10.54.71.255 & 10.54.64.3 $\rightarrow$ 10.54.71.254 & -- & 10.54.64.1 & 10.54.64.2 \\
     \cline{2-9}
     & Interconnection Amazing - ESW\#1 & 10.54.78.0 & 30 & 10.54.78.3 & 10.54.78.1 $\rightarrow$ 10.54.78.2 & -- & -- & -- \\
     \cline{2-9}
@@ -96,9 +96,9 @@ Since our nmecs are 113435 and 114184, the list of numbers to be used in the IP 
 
     \hline
 
-    \multirow{\textbf{GR8}} & Office & 10.114.36.0 & 24 & 10.114.36.255 & 10.114.36.1 $\rightarrow$ 10.114.36.254 & -- & -- & -- \\
+    \multirow{\textbf{GR8}} & Office & 10.114.36.0 & 24 & 10.114.36.255 & 10.114.36.3 $\rightarrow$ 10.114.36.254 & -- & 10.114.36.1 & -- \\
     \cline{2-9}
-    & WiFi & 10.114.37.0 & 24 & 10.114.37.255 & 10.114.37.1 $\rightarrow$ 10.114.37.254 & -- & -- & -- \\
+    & WiFi & 10.114.37.0 & 24 & 10.114.37.255 & 10.114.37.3 $\rightarrow$ 10.114.37.254 & -- & 10.114.37.1 & -- \\
 
     \hline
 \end{tabularx}
@@ -160,33 +160,33 @@ This company will have no gateways.
 
     \hline
 
-    \multirow{\textbf{NewNet ISP}} & NewNetCenter & 201.134.15.128 & 26 & 201.134.15.191 & 201.134.15.129 $\rightarrow$ 201.134.15.190 & -- & 201.135.15.128 & -- \\
+    \multirow{\textbf{NewNet ISP}} & NewNetCenter & 201.134.15.128 & 26 & 201.134.15.191 & 201.134.15.130 $\rightarrow$ 201.134.15.190 & -- & 201.135.15.129 & -- \\
     \cline{2-9}
-    & NewNetIT & 201.134.15.96 & 27 & 201.134.15.127 & 201.134.15.97 $\rightarrow$ 201.134.15.126 & -- & 201.135.15.96 & -- \\
+    & NewNetIT & 201.134.15.96 & 27 & 201.134.15.127 & 201.134.15.98 $\rightarrow$ 201.134.15.126 & -- & 201.135.15.97 & -- \\
 
     \hline
 
-    \multirow{\textbf{Amazing}} & Offices & 201.134.15.192 & 26 & 201.134.15.255 & 201.134.15.193 $\rightarrow$ 201.134.15.254 & -- & 201.135.15.192 & -- \\
+    \multirow{\textbf{Amazing}} & Offices & 201.134.15.192 & 26 & 201.134.15.255 & 201.134.15.195 $\rightarrow$ 201.134.15.254 & -- & 201.135.15.193 & 201.135.15.194 \\
     \cline{2-9}
     & WiFi & -- & -- & -- & -- & -- & -- & -- \\
     \cline{2-9}
     & Factory & -- & -- & -- & -- & -- & -- & -- \\
     \cline{2-9}
-    & NAT/PAT & 201.134.15.32 & 27 & 201.134.15.61 & 201.134.15.33 $\rightarrow$ 201.134.15.60 & -- & 201.135.15.32 & -- \\
+    & NAT/PAT & 201.134.15.32 & 27 & 201.134.15.61 & 201.134.15.33 $\rightarrow$ 201.134.15.60 & -- & -- & -- \\
 
     \hline
 
-    \multirow{\textbf{GR8}} & Office & 201.134.15.64 & 27 & 201.134.15.95 & 201.134.15.65 $\rightarrow$ 201.134.15.94 & -- & 201.135.15.64 & -- \\
+    \multirow{\textbf{GR8}} & Office & 201.134.15.64 & 27 & 201.134.15.95 & 201.134.15.66 $\rightarrow$ 201.134.15.94 & -- & 201.135.15.65 & -- \\
     \cline{2-9}
     & WiFi & -- & -- & -- & -- & -- & -- & -- \\
     \cline{2-9}
-    & NAT/PAT & 201.134.15.16 & 28 & 201.134.15.31 & 201.134.15.17 $\rightarrow$ 201.134.15.30 & -- & 201.135.15.16 & -- \\
+    & NAT/PAT & 201.134.15.16 & 28 & 201.134.15.31 & 201.134.15.17 $\rightarrow$ 201.134.15.30 & -- & -- & -- \\
 
     \hline
 
-    \multirow{\textbf{Interconnection}} & NewNet - Amazing & 201.134.15.8 & 30 & 201.134.15.11 & 201.134.15.9 $\rightarrow$ 201.134.15.10 & -- & 201.135.15.8 & -- \\
+    \multirow{\textbf{Interconnection}} & NewNet - Amazing & 201.134.15.8 & 30 & 201.134.15.11 & 201.134.15.9 $\rightarrow$ 201.134.15.10 & -- & -- & -- \\
     \cline{2-9}
-    & NewNet - GR8 & 201.134.15.12 & 30 & 201.134.15.15 & 201.134.15.13 $\rightarrow$ 201.134.15.14 & -- & 201.135.15.12 & -- \\
+    & NewNet - GR8 & 201.134.15.12 & 30 & 201.134.15.15 & 201.134.15.13 $\rightarrow$ 201.134.15.14 & -- & -- & -- \\
 
     \hline
 \end{tabularx}
@@ -235,9 +235,9 @@ Since we only have one ISP, we will need to divide the same network for all the 
 
         \hline
 
-        \multirow{\textbf{NewNet ISP}} & NewNetCenter & \textbf{G}:11C0:: & 64 & \textbf{G}:11C0::0003 $\rightarrow$ \textbf{G}:11C0:FFFF:FFFF & -- & \textbf{G}:11C0::0001 & \textbf{G}:11C0::0002 \\
+        \multirow{\textbf{NewNet ISP}} & NewNetCenter & \textbf{G}:11C0:: & 64 & \textbf{G}:11C0::0002 $\rightarrow$ \textbf{G}:11C0:FFFF:FFFF & -- & \textbf{G}:11C0::0001 & -- \\
         \cline{2-8}
-        & NewNetIT & \textbf{G}:11C1:: & 64 & \textbf{G}:11C1::0003 $\rightarrow$ \textbf{G}:11C1:FFFF:FFFF & -- & \textbf{G}:11C1::0001 & \textbf{G}:11C1::0002 \\
+        & NewNetIT & \textbf{G}:11C1:: & 64 & \textbf{G}:11C1::0002 $\rightarrow$ \textbf{G}:11C1:FFFF:FFFF & -- & \textbf{G}:11C1::0001 & -- \\
 
         \hline
 
@@ -247,21 +247,21 @@ Since we only have one ISP, we will need to divide the same network for all the 
         \cline{2-8}
         & Factory & -- & -- & -- & -- & -- & -- \\
         \cline{2-8}
-        & Interconnection Amazing - ESW\#1 & FE80::1 & 10 & -- & -- & -- & -- \\
+        & Interconnection Amazing - ESW\#1 & FE80:: & 10 & FE80::1 & -- & -- & -- \\
         \cline{2-8}
-        & Interconnection Amazing - ESW\#2 & FE80::2 & 10 & -- & -- & -- & -- \\
+        & Interconnection Amazing - ESW\#2 & FE80:: & 10 & FE80::2 & -- & -- & -- \\
 
         \hline
 
-        \multirow{\textbf{GR8}} & Office & \textbf{G}:1190:: & 64 & \textbf{G}:1190::0003 $\rightarrow$ \textbf{G}:1190:FFFF:FFFF & -- & \textbf{G}:1190::0001 & \textbf{G}:1190::0002 \\
+        \multirow{\textbf{GR8}} & Office & \textbf{G}:1190:: & 64 & \textbf{G}:1190::0002 $\rightarrow$ \textbf{G}:1190:FFFF:FFFF & -- & \textbf{G}:1190::0001 & -- \\
         \cline{2-8}
-        & WiFi & \textbf{G}:1191:: & 64 & \textbf{G}:1191::0003 $\rightarrow$ \textbf{G}:1191:FFFF:FFFF & -- & \textbf{G}:1191::0001 & \textbf{G}:1191::0002 \\
+        & WiFi & \textbf{G}:1191:: & 64 & \textbf{G}:1191::0002 $\rightarrow$ \textbf{G}:1191:FFFF:FFFF & -- & \textbf{G}:1191::0001 & -- \\
 
         \hline
 
-        \multirow{\textbf{Interconnection}} & NewNet - Amazing & \textbf{G}:1100::0002 & 126 & \textbf{G}:1100::0003 & -- & \textbf{G}:1100::0001 & \textbf{G}:1100::0002 \\
+        \multirow{\textbf{Interconnection}} & NewNet - Amazing & \textbf{G}:1100::0002 & 126 & \textbf{G}:1100::0002 $\rightarrow$ \textbf{G}:1100::0003 & -- & \textbf{G}:1100::0001 & -- \\
         \cline{2-8}
-        & NewNet - GR8 & \textbf{G}:1100::0004 & 126 & \textbf{G}:1100::0007 & -- & \textbf{G}:1100::0005 & \textbf{G}:1100::0006 \\
+        & NewNet - GR8 & \textbf{G}:1100::0004 & 126 & \textbf{G}:1100::0006 $\rightarrow$ \textbf{G}:1100::0007 & -- & \textbf{G}:1100::0005 & -- \\
 
         \hline
     \end{tabularx}
