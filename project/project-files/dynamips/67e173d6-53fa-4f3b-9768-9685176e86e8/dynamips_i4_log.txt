@@ -1,0 +1,19 @@
+Dec 01 20:59:33.995 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 01 20:59:33.996 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60897.
+Dec 01 20:59:34.004 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 01 20:59:34.004 HYPERVISOR: exec_cmd: hypervisor working_dir /home/rubeng/Documents/UAlinux/2/RC1/rc1-project/project/project-files/dynamips 
+Dec 01 20:59:34.004 GENERAL: working_dir=/home/rubeng/Documents/UAlinux/2/RC1/rc1-project/project/project-files/dynamips
+Dec 01 20:59:34.004 HYPERVISOR: exec_cmd: ethsw create NewNetSw 
+Dec 01 20:59:35.087 HYPERVISOR: exec_cmd: nio create_udp udp-2fcd88a4-68f9-4056-a42b-c611cc359e91 20011 127.0.0.1 20010 
+Dec 01 20:59:35.087 HYPERVISOR: exec_cmd: ethsw add_nio NewNetSw udp-2fcd88a4-68f9-4056-a42b-c611cc359e91 
+Dec 01 20:59:35.099 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-2fcd88a4-68f9-4056-a42b-c611cc359e91 2 
+Dec 01 20:59:35.143 HYPERVISOR: exec_cmd: nio create_udp udp-076bda1d-b372-48fd-990b-5bb558e709f0 20012 127.0.0.1 20013 
+Dec 01 20:59:35.143 HYPERVISOR: exec_cmd: ethsw add_nio NewNetSw udp-076bda1d-b372-48fd-990b-5bb558e709f0 
+Dec 01 20:59:35.159 HYPERVISOR: exec_cmd: ethsw set_access_port NewNetSw udp-076bda1d-b372-48fd-990b-5bb558e709f0 3 
+Dec 01 20:59:36.236 HYPERVISOR: exec_cmd: nio create_udp udp-d0a62964-3b69-4277-9040-9b0a98661077 20037 127.0.0.1 20036 
+Dec 01 20:59:36.237 HYPERVISOR: exec_cmd: ethsw add_nio NewNetSw udp-d0a62964-3b69-4277-9040-9b0a98661077 
+Dec 01 20:59:36.245 HYPERVISOR: exec_cmd: ethsw set_dot1q_port NewNetSw udp-d0a62964-3b69-4277-9040-9b0a98661077 1 
+Dec 01 22:47:30.302 HYPERVISOR: exec_cmd: ethsw delete NewNetSw 
+Dec 01 22:47:30.356 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 01 22:47:30.452 HYPERVISOR: Stopped.
+Dec 01 22:47:30.452 GENERAL: reset done.

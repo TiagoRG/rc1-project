@@ -1,0 +1,19 @@
+Dec 01 20:59:33.943 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 01 20:59:33.943 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 35971.
+Dec 01 20:59:33.951 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 01 20:59:33.952 HYPERVISOR: exec_cmd: hypervisor working_dir /home/rubeng/Documents/UAlinux/2/RC1/rc1-project/project/project-files/dynamips 
+Dec 01 20:59:33.952 GENERAL: working_dir=/home/rubeng/Documents/UAlinux/2/RC1/rc1-project/project/project-files/dynamips
+Dec 01 20:59:33.952 HYPERVISOR: exec_cmd: ethsw create GR8-Office 
+Dec 01 20:59:34.680 HYPERVISOR: exec_cmd: nio create_udp udp-22d78940-ba3a-4030-8737-66cfb2963a02 20000 127.0.0.1 20001 
+Dec 01 20:59:34.680 HYPERVISOR: exec_cmd: ethsw add_nio GR8-Office udp-22d78940-ba3a-4030-8737-66cfb2963a02 
+Dec 01 20:59:34.685 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-22d78940-ba3a-4030-8737-66cfb2963a02 2 
+Dec 01 20:59:34.766 HYPERVISOR: exec_cmd: nio create_udp udp-49016b79-86cb-4311-90fb-1214c1f4ed4f 20003 127.0.0.1 20002 
+Dec 01 20:59:34.766 HYPERVISOR: exec_cmd: ethsw add_nio GR8-Office udp-49016b79-86cb-4311-90fb-1214c1f4ed4f 
+Dec 01 20:59:34.786 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-49016b79-86cb-4311-90fb-1214c1f4ed4f 2 
+Dec 01 20:59:34.847 HYPERVISOR: exec_cmd: nio create_udp udp-f9a0f504-3390-4b9b-b78d-c1c2340101f7 20005 127.0.0.1 20004 
+Dec 01 20:59:34.847 HYPERVISOR: exec_cmd: ethsw add_nio GR8-Office udp-f9a0f504-3390-4b9b-b78d-c1c2340101f7 
+Dec 01 20:59:34.866 HYPERVISOR: exec_cmd: ethsw set_access_port GR8-Office udp-f9a0f504-3390-4b9b-b78d-c1c2340101f7 2 
+Dec 01 22:47:30.302 HYPERVISOR: exec_cmd: ethsw delete GR8-Office 
+Dec 01 22:47:30.357 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 01 22:47:30.378 HYPERVISOR: Stopped.
+Dec 01 22:47:30.378 GENERAL: reset done.

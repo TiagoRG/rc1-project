@@ -1,14 +1,14 @@
 Cisco Router Simulation Platform (version 0.2.23-amd64/Linux stable)
 Copyright (c) 2005-2011 Christophe Fillot.
-Build date: Sep  5 2023 18:29:26
+Build date: Sep 12 2023 18:10:28
 
-Log file: writing to dynamips_i3_log.txt
-Console binding address set to localhost
+Log file: writing to dynamips_i5_log.txt
+Console binding address set to 127.0.0.1
 ILT: loaded table "mips64j" from cache.
 ILT: loaded table "mips64e" from cache.
 ILT: loaded table "ppc32j" from cache.
 ILT: loaded table "ppc32e" from cache.
-Hypervisor TCP control server started (IP 127.0.0.1 port 48197).
+Hypervisor TCP control server started (IP 127.0.0.1 port 50395).
 Hypervisor: closing control sockets.
 Hypervisor: closing remote client connections.
 Shutdown in progress...
