@@ -1,0 +1,3 @@
+set pcname Happy
+dhcp
+ip auto

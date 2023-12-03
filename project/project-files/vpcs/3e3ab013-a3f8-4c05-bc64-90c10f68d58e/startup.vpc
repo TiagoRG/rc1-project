@@ -1,0 +1,3 @@
+set pcname NetSurfer
+dhcp
+ip auto

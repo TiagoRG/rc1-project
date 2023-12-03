@@ -1,2 +1,2 @@
-set pcname VPCS
+set pcname TestServer
 ip 201.134.15.131 201.134.15.129 26
