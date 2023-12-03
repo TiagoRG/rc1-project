@@ -21,18 +21,18 @@
                 "drawing_id": "eb2807ad-0972-4008-9a75-8351db434f5a",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg width=\"54\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">::0003</text></svg>",
-                "x": 303,
-                "y": 240,
+                "svg": "<svg width=\"45\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">::0003</text></svg>",
+                "x": 171,
+                "y": 238,
                 "z": 2
             },
             {
                 "drawing_id": "79fdad62-91a7-4bad-818f-d4eadd7f977b",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg width=\"54\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">::0002</text></svg>",
-                "x": 667,
-                "y": 235,
+                "svg": "<svg width=\"45\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">::0002</text></svg>",
+                "x": -413,
+                "y": 242,
                 "z": 2
             },
             {
@@ -201,18 +201,18 @@
                 "drawing_id": "4870f528-2380-4ffd-8f09-eb29182ae11d",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg width=\"54\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">::0007</text></svg>",
-                "x": 171,
-                "y": 239,
+                "svg": "<svg width=\"45\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">::0007</text></svg>",
+                "x": 306,
+                "y": 238,
                 "z": 2
             },
             {
                 "drawing_id": "dddab0b3-22bf-4ea1-a025-0c6850bc1fdb",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg width=\"54\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">::0006</text></svg>",
-                "x": -402,
-                "y": 243,
+                "svg": "<svg width=\"45\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">::0006</text></svg>",
+                "x": 667,
+                "y": 233,
                 "z": 2
             },
             {
@@ -237,7 +237,7 @@
                 "drawing_id": "44dfc25a-792e-47c8-a05c-83a92a9ba35a",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg width=\"44\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.78.1</text></svg>",
+                "svg": "<svg width=\"37\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.78.1</text></svg>",
                 "x": -534,
                 "y": 208,
                 "z": 2
@@ -273,7 +273,7 @@
                 "drawing_id": "54a97a64-668c-4312-981c-531277309389",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg width=\"59\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">fe80::4</text></svg>",
+                "svg": "<svg width=\"51\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">fe80::4</text></svg>",
                 "x": -439,
                 "y": 220,
                 "z": 2
@@ -2855,7 +2855,7 @@
                 "compute_id": "local",
                 "console": null,
                 "console_auto_start": false,
-                "console_type": null,
+                "console_type": "none",
                 "custom_adapters": [],
                 "first_port_name": null,
                 "height": 71,
