@@ -66,7 +66,7 @@
                 "drawing_id": "0123188c-0d42-4033-a66c-d0cdae6a6b82",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg width=\"60\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">VLAN 2</text></svg>",
+                "svg": "<svg width=\"54\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">VLAN 2</text></svg>",
                 "x": 591,
                 "y": -101,
                 "z": 2
@@ -165,7 +165,7 @@
                 "drawing_id": "22efbc90-08e8-4cc7-91ea-cbbdfb6f4c63",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg width=\"60\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">VLAN 2</text></svg>",
+                "svg": "<svg width=\"54\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">VLAN 2</text></svg>",
                 "x": 133,
                 "y": -144,
                 "z": 2
@@ -174,7 +174,7 @@
                 "drawing_id": "335cfc60-4137-4a15-89c4-7ecbee1db8d8",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg width=\"60\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">VLAN 3</text></svg>",
+                "svg": "<svg width=\"54\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">VLAN 3</text></svg>",
                 "x": 411,
                 "y": -128,
                 "z": 2
@@ -183,7 +183,7 @@
                 "drawing_id": "df8ad6eb-c3cb-489b-a6fd-ec30a3f7b4ca",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg width=\"54\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.15.10</text></svg>",
+                "svg": "<svg width=\"45\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.15.10</text></svg>",
                 "x": 170,
                 "y": 216,
                 "z": 2
@@ -246,7 +246,7 @@
                 "drawing_id": "8b6f6773-cb3c-4ad1-93e6-7844e5c105ea",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg width=\"44\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.78.5</text></svg>",
+                "svg": "<svg width=\"37\" height=\"26\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.78.5</text></svg>",
                 "x": -432,
                 "y": 206,
                 "z": 2
@@ -963,38 +963,6 @@
             },
             {
                 "filters": {},
-                "link_id": "e522a838-781a-46d0-92c6-3af4be4c563d",
-                "link_style": {},
-                "nodes": [
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "g0/0",
-                            "x": 33,
-                            "y": 61
-                        },
-                        "node_id": "50ff07d8-85c2-45c2-bf45-c6d014eee1d4",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "wlan0",
-                            "x": 79,
-                            "y": -4
-                        },
-                        "node_id": "f1199e09-b33d-452e-bc06-c5d8bc3cd92b",
-                        "port_number": 0
-                    }
-                ],
-                "suspend": false
-            },
-            {
-                "filters": {},
                 "link_id": "0eb26f17-dcd1-4941-9992-7da8321839a7",
                 "link_style": {},
                 "nodes": [
@@ -1277,6 +1245,38 @@
                         },
                         "node_id": "5200477b-6166-4354-a030-1c6542a7cf1b",
                         "port_number": 1
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "32a651f2-967f-4288-aaba-9b8c7958ad1e",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "g0/0",
+                            "x": 37,
+                            "y": 46
+                        },
+                        "node_id": "50ff07d8-85c2-45c2-bf45-c6d014eee1d4",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "eno2",
+                            "x": 78,
+                            "y": -4
+                        },
+                        "node_id": "be67749c-7b64-44dc-9727-86a7a8ba35e4",
+                        "port_number": 0
                     }
                 ],
                 "suspend": false
@@ -1992,70 +1992,6 @@
                 "width": 65,
                 "x": 52,
                 "y": -150,
-                "z": 1
-            },
-            {
-                "compute_id": "local",
-                "console": null,
-                "console_auto_start": false,
-                "console_type": "none",
-                "custom_adapters": [],
-                "first_port_name": null,
-                "height": 71,
-                "label": {
-                    "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "TheWorld",
-                    "x": 49,
-                    "y": 23
-                },
-                "locked": false,
-                "name": "TheWorld",
-                "node_id": "f1199e09-b33d-452e-bc06-c5d8bc3cd92b",
-                "node_type": "cloud",
-                "port_name_format": "Ethernet{0}",
-                "port_segment_size": 0,
-                "properties": {
-                    "interfaces": [
-                        {
-                            "name": "enp0s20f0u1",
-                            "special": false,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "lo",
-                            "special": true,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "virbr0",
-                            "special": true,
-                            "type": "ethernet"
-                        },
-                        {
-                            "name": "wlan0",
-                            "special": false,
-                            "type": "ethernet"
-                        }
-                    ],
-                    "ports_mapping": [
-                        {
-                            "interface": "wlan0",
-                            "name": "wlan0",
-                            "port_number": 0,
-                            "type": "ethernet"
-                        }
-                    ],
-                    "remote_console_host": "",
-                    "remote_console_http_path": "/",
-                    "remote_console_port": 23,
-                    "remote_console_type": "none"
-                },
-                "symbol": ":/symbols/cloud.svg",
-                "template_id": "39e257dc-8412-3174-b6b3-0ee3ed6a43e9",
-                "width": 159,
-                "x": 180,
-                "y": 388,
                 "z": 1
             },
             {
@@ -2914,11 +2850,76 @@
                 "x": -405,
                 "y": 94,
                 "z": 1
+            },
+            {
+                "compute_id": "local",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": null,
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 71,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "TheWorld",
+                    "x": 48,
+                    "y": 20
+                },
+                "locked": false,
+                "name": "TheWorld",
+                "node_id": "be67749c-7b64-44dc-9727-86a7a8ba35e4",
+                "node_type": "cloud",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "interfaces": [
+                        {
+                            "name": "eno2",
+                            "special": false,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "lo",
+                            "special": true,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "wlo1",
+                            "special": false,
+                            "type": "ethernet"
+                        }
+                    ],
+                    "ports_mapping": [
+                        {
+                            "interface": "eno2",
+                            "name": "eno2",
+                            "port_number": 0,
+                            "type": "ethernet"
+                        },
+                        {
+                            "interface": "wlo1",
+                            "name": "wlo1",
+                            "port_number": 1,
+                            "type": "ethernet"
+                        }
+                    ],
+                    "remote_console_host": "",
+                    "remote_console_http_path": "/",
+                    "remote_console_port": 23,
+                    "remote_console_type": "none"
+                },
+                "symbol": ":/symbols/cloud.svg",
+                "template_id": "39e257dc-8412-3174-b6b3-0ee3ed6a43e9",
+                "width": 159,
+                "x": 181,
+                "y": 344,
+                "z": 1
             }
         ]
     },
     "type": "topology",
     "variables": null,
     "version": "2.2.44.1",
-    "zoom": 62
+    "zoom": 88
 }
