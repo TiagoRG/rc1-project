@@ -1,0 +1,69 @@
+VPC: Boss
+
+set pcname Boss
+ip 201.134.15.195 201.134.15.193 26
+ip 2002:8888:4314:1180:2050:79ff:fe66:6806/64
+ip auto
+
+===================================
+
+VPC: MoneyCounter
+
+set pcname MoneyCounter
+ip 201.134.15.196 201.134.15.193 26
+ip 2002:8888:4314:1180:2050:79ff:fe66:6807/64
+ip auto
+
+===================================
+
+VPC: NetSurfer
+set pcname NetSurfer
+dhcp
+ip auto
+
+===================================
+
+VPC: AmazJob
+
+set pcname AmazJob
+dhcp
+
+===================================
+
+VPC: TestServer
+
+set pcname TestServer
+ip 201.134.15.131 201.134.15.129 26
+
+===================================
+
+VPC: Nerd
+
+set pcname Nerd
+ip 201.134.15.98 201.134.15.97 27
+
+===================================
+
+VPC: Lider
+
+set pcname Lider
+dhcp
+ip auto
+
+===================================
+
+VPC: Happy
+
+set pcname Happy
+dhcp
+ip auto
+
+===================================
+
+VPC: Visitor
+
+set pcname Visitor
+dhcp
+ip auto
+
+===================================
