@@ -5,18 +5,22 @@ import threading
 import struct
 import signal
 import datetime
+import readline
 
 
 def message_send_handler():
+    global username
     order = 0
+    print("\n----------------------------------------")
     while True:
         try:
             message = input()
-            print("\033[A                             \033[A")
+            print("\033[A                                                 \033[A")
             if message == '':
-                print("Message > ", end='')
+                print("\033[A                                                 \033[A")
+                print("----------------------------------------")
                 continue
-            message = f"{socket.gethostname()}: {message}".encode()
+            message = f"{username}: {message}".encode()
             version = 1
             order += 1
             size = len(message)
@@ -49,13 +53,17 @@ def message_receive_handler():
             request = sock.recv(size)
             pktdata = struct.unpack('{}s'.format(size), request)
             print()
-            print("\033[A                             \033[A")
-            print("\033[A                             \033[A")
-            print("[{}] {}\n\nMessage > "
+            print("\033[A                                                 \033[A")
+            print("\033[A                                                 \033[A")
+            print("\033[A                                                 \033[A")
+            print("[{}] {}\n"
                   .format(
                       datetime.datetime.fromtimestamp(
                           now).strftime('%Y-%m-%d %H:%M:%S'),
-                      pktdata[0].decode()), end='')
+                      pktdata[0].decode()))
+            print("----------------------------------------")
+            sys.stdout.write(readline.get_line_buffer())
+            sys.stdout.flush()
             # print("\rReceived ver: {}, size: {}, order: {}, date: {} -> {}\n\nMessage > "
             #       .format(version, size, order, now, pktdata[0].decode()), end='')
         except (socket.timeout, socket.error):
@@ -73,8 +81,9 @@ def signal_handler(sig, frame):
 
 
 signal.signal(signal.SIGINT, signal_handler)
-print('Logged in as {}.'.format(socket.gethostname()))
-print('Press Ctrl+C to exit...')
+username = input('Enter your username: ')
+print('Logged in as {}.'.format(username))
+print('Press Ctrl+C to exit...\n\n')
 
 ip_addr = "127.0.0.1"
 tcp_port = 5005
@@ -83,6 +92,5 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 sock.connect((ip_addr, tcp_port))
 
-print("Message > ", end="")
 send_handler.start()
 receive_handler.start()
