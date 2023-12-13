@@ -12,10 +12,11 @@ def message_send_handler():
     while True:
         try:
             message = input()
+            print("\033[A                             \033[A")
             if message == '':
+                print("Message > ", end='')
                 continue
-            # print("\033[A                             \033[A")
-            message = message.encode()
+            message = f"{socket.gethostname()}: {message}".encode()
             version = 1
             order += 1
             size = len(message)
@@ -43,13 +44,20 @@ def message_receive_handler():
                 print('Server error. Done!')
                 os.kill(os.getpid(), signal.SIGTERM)
                 sys.exit(0)
-            version, size, order, now = pktheader
+            # version, size, order, now = pktheader
+            size, now = pktheader[1], pktheader[3]
             request = sock.recv(size)
             pktdata = struct.unpack('{}s'.format(size), request)
+            print()
             print("\033[A                             \033[A")
             print("\033[A                             \033[A")
-            print("\rReceived ver: {}, size: {}, order: {}, date: {} -> {}\n\nMessage > "
-                  .format(version, size, order, now, pktdata[0].decode()), end='')
+            print("[{}] {}\n\nMessage > "
+                  .format(
+                      datetime.datetime.fromtimestamp(
+                          now).strftime('%Y-%m-%d %H:%M:%S'),
+                      pktdata[0].decode()), end='')
+            # print("\rReceived ver: {}, size: {}, order: {}, date: {} -> {}\n\nMessage > "
+            #       .format(version, size, order, now, pktdata[0].decode()), end='')
         except (socket.timeout, socket.error):
             print('Server error. Done!')
             os.kill(os.getpid(), signal.SIGTERM)
@@ -65,6 +73,7 @@ def signal_handler(sig, frame):
 
 
 signal.signal(signal.SIGINT, signal_handler)
+print('Logged in as {}.'.format(socket.gethostname()))
 print('Press Ctrl+C to exit...')
 
 ip_addr = "127.0.0.1"

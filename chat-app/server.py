@@ -4,6 +4,7 @@ import threading
 import signal
 import sys
 import struct
+import datetime
 
 
 SOCKS_LIST = []
@@ -36,12 +37,18 @@ def handle_client_connection(client_socket, address):
             version, size, order, now = pktheader
             request = client_socket.recv(size)
             pktdata = struct.unpack('{}s'.format(size), request)
-            data = f"{address[0]}:{address[1]}: {pktdata[0].decode()}"
+            # data = f"{address[0]}:{address[1]}: {pktdata[0].decode()}"
+            data = pktdata[0].decode()
             size = len(data)
-            print('Received ver: {}, size: {}, order: {}, date: {} -> {}'.format(version,
-                  size, order, now, data))
-            pkt = struct.pack('!BLLL{}s'.format(
-                size), version, size, order, now, data.encode())
+            print('Received ver: {}, size: {}, order: {}, date: {} -> {}'
+                  .format(version, size, order,
+                          datetime.datetime.fromtimestamp(now).strftime('%Y-%m-%d %H:%M:%S'),
+                          data))
+            try:
+                pkt = struct.pack('!BLLL{}s'.format(size), version, size, order, now, data.encode())
+            except struct.error:
+                print('Client {} error. Done!'.format(address))
+                break
             # client_socket.send(pkt)
             for sock in SOCKS_LIST:
                 sock.send(pkt)
@@ -69,5 +76,6 @@ while True:
     SOCKS_LIST.append(client_sock)
     print(SOCKS_LIST)
     client_handler = threading.Thread(
-        target=handle_client_connection, args=(client_sock, address), daemon=True)
+        target=handle_client_connection, args=(client_sock, address),
+        daemon=True)
     client_handler.start()
