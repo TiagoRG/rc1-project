@@ -1778,10 +1778,11 @@
                             "vlan": 2
                         },
                         {
+                            "ethertype": "",
                             "name": "Ethernet3",
                             "port_number": 3,
                             "type": "access",
-                            "vlan": 1
+                            "vlan": 2
                         },
                         {
                             "name": "Ethernet4",
@@ -2951,7 +2952,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5037,
+                "console": 5038,
                 "console_auto_start": false,
                 "console_type": "spice",
                 "custom_adapters": [],
