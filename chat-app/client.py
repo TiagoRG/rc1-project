@@ -1,5 +1,6 @@
 import os
 import sys
+import re
 import socket
 import threading
 import struct
@@ -10,32 +11,31 @@ import readline
 
 def message_send_handler():
     global sock
-    global username
     print("\n----------------------------------------")
     while True:
         try:
             message = input()
+            if re.match(r'^[!/][eq]$', message):
+                print('Done!')
+                sock.close()
+                os.kill(os.getpid(), signal.SIGTERM)
             print("\033[A                                                 \033[A")
             if message == '':
-                print(
-                    "\033[A                                                 \033[A")
+                print("\033[A                                                 \033[A")
                 print("----------------------------------------")
                 continue
             message = message.encode()
-            usr_size = len(username)
             msg_size = len(message)
             try:
                 now = int(datetime.datetime.now().timestamp())
             except ValueError:
                 now = 0
-            pkt = struct.pack('!LLL{}s{}s'.format(usr_size, msg_size),
-                              usr_size, msg_size, now,
-                              username, message)
+            pkt = struct.pack('!LL{}s'.format(msg_size), msg_size, now, message)
             sock.send(pkt)
         except (socket.timeout, socket.error):
             print('Server error. Done!')
+            sock.close()
             os.kill(os.getpid(), signal.SIGTERM)
-            sys.exit(0)
 
 
 def message_receive_handler():
@@ -52,23 +52,18 @@ def message_receive_handler():
                 sys.exit(0)
             usr_size, msg_size, now = pktheader
             request = sock.recv(usr_size + msg_size)
-            pktdata = struct.unpack('{}s{}s'.format(
-                usr_size, msg_size), request)
+            pktdata = struct.unpack('{}s{}s'.format(usr_size, msg_size), request)
             print()
             print("\033[A                                                 \033[A")
             print("\033[A                                                 \033[A")
             print("\033[A                                                 \033[A")
-            print("[{}] {}: {}\n"
-                  .format(
-                      datetime.datetime.fromtimestamp(
-                          now).strftime('%Y-%m-%d %H:%M:%S'),
-                      pktdata[0].decode(),
-                      pktdata[1].decode()))
+            print("[{}] {}: {}\n".format(datetime.datetime.fromtimestamp(now).strftime('%Y-%m-%d %H:%M:%S'), pktdata[0].decode(), pktdata[1].decode()))
             print("----------------------------------------")
             sys.stdout.write(readline.get_line_buffer())
             sys.stdout.flush()
         except (socket.timeout, socket.error):
             print('Server error. Done!')
+            sock.close()
             os.kill(os.getpid(), signal.SIGTERM)
 
 
@@ -100,8 +95,7 @@ def main():
     headerformat = '!L'
 
     # Send list of connected clients
-    sock.send(struct.pack('!L{}s'.format(len(username)),
-                          len(username), username))
+    sock.send(struct.pack('!L{}s'.format(len(username)), len(username), username))
 
     request = sock.recv(struct.calcsize(headerformat))
     list_size = struct.unpack(headerformat, request)[0]

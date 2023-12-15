@@ -2909,6 +2909,11 @@
                 "properties": {
                     "interfaces": [
                         {
+                            "name": "enp0s20f0u1",
+                            "special": false,
+                            "type": "ethernet"
+                        },
+                        {
                             "name": "lo",
                             "special": true,
                             "type": "ethernet"
@@ -3016,8 +3021,8 @@
                 "symbol": ":/symbols/qemu_guest.svg",
                 "template_id": "4bc3007c-d7ce-4d3d-b030-1fc371b7703b",
                 "width": 65,
-                "x": -838,
-                "y": -266,
+                "x": -839,
+                "y": -268,
                 "z": 1
             }
         ]
@@ -3025,5 +3030,5 @@
     "type": "topology",
     "variables": null,
     "version": "2.2.44.1",
-    "zoom": 66
+    "zoom": 78
 }
