@@ -89,11 +89,12 @@ def handle_commands():
     global CLIENTS
     while True:
         command = input()
-        if re.match(r'^[eq]$', command):
+        print("\033[A                                                 \033[A")
+        if re.match(r'^[eq]|exit|quit$', command):
             print('{}[{}] {}{} Shutting down server...'.format(Color.WARNING, datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), LogMessage.INFO, Color.ENDC))
             server.close()
             os.kill(os.getpid(), signal.SIGTERM)
-        elif re.match(r'^[lc]$', command):
+        elif re.match(r'^[lc]|list|clients$', command):
             print('Connected clients:\n')
             for sock in CLIENTS.keys():
                 print('Username: {}\nAddress: {}:{}\nOrders: {}\n'.format(CLIENTS[sock]["username"], sock.getpeername()[0], sock.getpeername()[1], CLIENTS[sock]["order"]))
@@ -103,7 +104,7 @@ def handle_commands():
 
 def signal_handler(sig, frame):
     global server
-    print('\nDone!')
+    print('\r{}[{}] {}{} Shutting down server...'.format(Color.WARNING, datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), LogMessage.INFO, Color.ENDC))
     server.close()
     os.kill(os.getpid(), signal.SIGTERM)
 
@@ -133,8 +134,8 @@ def main():
     signal.signal(signal.SIGINT, signal_handler)
     print('{}[{}] {}{} Press Ctrl+C to exit...'.format(Color.OKBLUE, datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), LogMessage.INFO, Color.ENDC))
 
-    threading.Thread(target=handle_connections).start()
     threading.Thread(target=handle_commands).start()
+    threading.Thread(target=handle_connections).start()
 
 
 if __name__ == '__main__':
