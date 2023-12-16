@@ -21,7 +21,7 @@ class Color:
 
 def message_send_handler():
     global sock
-    print("{}----------------------------------------{}".format(Color.GRAY, Color.ENDC))
+    print("{}{}{}".format(Color.GRAY, "-"*os.get_terminal_size().columns, Color.ENDC))
     while True:
         try:
             message = input()
@@ -29,10 +29,10 @@ def message_send_handler():
                 print('Done!')
                 sock.close()
                 os.kill(os.getpid(), signal.SIGTERM)
-            print("\033[A                                                           \033[A")
+            print('\033[1A' + '\033[K', end='')
             if message == '':
-                print("\033[A                                                           \033[A")
-                print("{}----------------------------------------".format(Color.GRAY, Color.ENDC))
+                print('\033[1A' + '\033[K', end='')
+                print("{}{}{}".format(Color.GRAY, "-"*os.get_terminal_size().columns, Color.ENDC))
                 continue
             message = message.encode()
             msg_size = len(message)
@@ -64,12 +64,12 @@ def message_receive_handler():
             request = sock.recv(usr_size + msg_size)
             pktdata = struct.unpack('{}s{}s'.format(usr_size, msg_size), request)
             print()
-            print("\033[A                                                           \033[A")
-            print("\033[A                                                           \033[A")
-            print("\033[A                                                           \033[A")
+            print('\033[1A' + '\033[K', end='')
+            print('\033[1A' + '\033[K', end='')
+            print('\033[1A' + '\033[K', end='')
             print("{}[{}]{} {}{}:{} {}\n".format(Color.GRAY, datetime.datetime.fromtimestamp(now).strftime('%Y-%m-%d %H:%M:%S'), Color.ENDC,
                                                  Color.OKBLUE, pktdata[0].decode(), Color.ENDC, pktdata[1].decode()))
-            print("{}----------------------------------------{}".format(Color.GRAY, Color.ENDC))
+            print("{}{}{}".format(Color.GRAY, "-"*os.get_terminal_size().columns, Color.ENDC))
             sys.stdout.write(readline.get_line_buffer())
             sys.stdout.flush()
         except (socket.timeout, socket.error):
@@ -112,8 +112,8 @@ def main():
     list_size = struct.unpack(headerformat, request)[0]
     list_of_clients = sock.recv(list_size).decode()
 
-    print('{}Connected Clients: {}'.format(Color.OKGREEN, list_of_clients))
-    print('Logged in as {}.'.format(username.decode()))
+    print('{}Logged in as {}.'.format(Color.OKGREEN, username.decode()))
+    print('Connected Clients: {}'.format(list_of_clients))
     print('Press Ctrl+C to exit...{}\n\n'.format(Color.ENDC))
 
     threading.Thread(target=message_send_handler).start()

@@ -41,6 +41,13 @@ def handle_client_connection(client, address):
 
     print('{}[{}] {}{} Accepted connection from {} ({}:{})'.format(Color.OKGREEN, datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                                                                    LogMessage.CONNECTION, Color.ENDC, username, address[0], address[1]))
+
+    message = '{}{}{} has joined the chat.'.format(Color.OKBLUE, username, Color.ENDC)
+    pkt = struct.pack('!LLL{}s{}s'.format(len('\033[95mSERVER'.encode()), len(message.encode())),
+                      len('\033[95mSERVER'.encode()), len(message.encode()), int(datetime.datetime.now().timestamp()), '\033[95mSERVER'.encode(), message.encode())
+    for sock in CLIENTS.keys():
+        sock.send(pkt)
+
     headerformat = '!LL'
     try:
         while True:
@@ -72,6 +79,11 @@ def handle_client_connection(client, address):
         CLIENTS.pop(client)
         print('{}[{}] {}{} Closed connection from {} ({}:{})'
               .format(Color.WARNING, datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), LogMessage.CONNECTION, Color.ENDC, username, address[0], address[1]))
+
+        message = '{}{}{} has left the chat.'.format(Color.OKBLUE, username, Color.ENDC)
+        pkt = struct.pack('!LLL{}s{}s'.format(len('\033[95mSERVER'.encode()), len(message.encode())), len('\033[95mSERVER'.encode()), len(message.encode()), int(datetime.datetime.now().timestamp()), '\033[95mSERVER'.encode(), message.encode())
+        for sock in CLIENTS.keys():
+            sock.send(pkt)
 
 
 def handle_connections():
