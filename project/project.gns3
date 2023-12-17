@@ -22,8 +22,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"54\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">::0003</text></svg>",
-                "x": 171,
-                "y": 238,
+                "x": 167,
+                "y": 234,
                 "z": 3
             },
             {
@@ -130,8 +130,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"54\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.15.14</text></svg>",
-                "x": 305,
-                "y": 220,
+                "x": 294,
+                "y": 218,
                 "z": 3
             },
             {
@@ -184,8 +184,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"54\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.15.10</text></svg>",
-                "x": 170,
-                "y": 216,
+                "x": 167,
+                "y": 218,
                 "z": 3
             },
             {
@@ -202,8 +202,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"54\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">::0007</text></svg>",
-                "x": 306,
-                "y": 238,
+                "x": 295,
+                "y": 234,
                 "z": 3
             },
             {
@@ -2161,8 +2161,8 @@
                 "symbol": ":/symbols/router.svg",
                 "template_id": "4e0ff74f-f52f-457f-bca1-d3e4a7639f57",
                 "width": 66,
-                "x": 224,
-                "y": 240,
+                "x": 223,
+                "y": 237,
                 "z": 2
             },
             {
@@ -2783,8 +2783,8 @@
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                     "text": "AmazL3SW1",
-                    "x": -96,
-                    "y": 8
+                    "x": -97,
+                    "y": 6
                 },
                 "locked": false,
                 "name": "AmazL3SW1",
@@ -2909,6 +2909,11 @@
                 "properties": {
                     "interfaces": [
                         {
+                            "name": "enp0s20f0u1",
+                            "special": false,
+                            "type": "ethernet"
+                        },
+                        {
                             "name": "lo",
                             "special": true,
                             "type": "ethernet"
@@ -3025,5 +3030,5 @@
     "type": "topology",
     "variables": null,
     "version": "2.2.44.1",
-    "zoom": 39
+    "zoom": 78
 }

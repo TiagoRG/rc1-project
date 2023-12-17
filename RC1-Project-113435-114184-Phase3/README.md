@@ -2,6 +2,19 @@
 
 ## Phase 3
 
+### How were files transferred
+
+All file transfers were made through SSH, using the `scp` command.
+
+We boot the Virtual Machine outside GNS3, with a configured Bridge Network Interface, and to transfer files we use one of the following commands:
+
+```sh
+scp -r /path/to/source/ user@destiny_machine:/path/to/destiny/
+scp -r user@source_machine:/path/to/source/ /path/to/destiny/
+```
+
+We also used this inside GNS3 to transfer files between Virtual Machines.
+
 ### File tree
 
 ```

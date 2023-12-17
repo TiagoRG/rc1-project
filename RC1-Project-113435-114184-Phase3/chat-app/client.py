@@ -7,6 +7,7 @@ import struct
 import signal
 import datetime
 import readline
+import argparse
 
 
 class Color:
@@ -91,8 +92,15 @@ def main():
 
     signal.signal(signal.SIGINT, signal_handler)
 
-    ip_addr = sys.argv[1] if len(sys.argv) > 1 else "127.0.0.1"
-    tcp_port = int(sys.argv[2]) if len(sys.argv) > 2 else 5005
+    ip_addr = "127.0.0.1"
+    tcp_port = 5005
+
+    for arg in sys.argv[1:(2 if all(a.isdigit() for a in sys.argv[1:]) else 3)]:
+        if arg.isdigit():
+            tcp_port = int(arg)
+        else:
+            ip_addr = arg
+
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     try:
